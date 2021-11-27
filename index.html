@@ -5,37 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <div class="center">
-        <h1>Forms</h1>
+        <h1>PROJECT: HTML FORMS</h1>
 
     </div>
     <form action="home.com" class="center" method="post">
         <fieldset class="account">
-            <h3>Create a Form account</h2>
+            <div class="heading">
+                 <h3>Create a  Intuit account</h2>
                 <span>One account for everything Intuit, including Mint. 
-                    Learn more</span>
+                  <br>Learn more</span>
+            </div>
+           
                     
             <label>
-                    Email
+                    Email<br>
                     <input type="email" name="email" required>
             </label>
 
             <label>
-                    Phone(recommended)
-                    <input type="number" name="phone">
-                    <span>Standard call, message, or data rates may apply.</span>
+                    Phone(recommended)<br>
+                    <input type="text" name="phone">
+                    <br>
+                 
 
             </label>
-            <label for="password"> Password 
+            <label for="password"> Password <br>
                 <input type="password" name="password" required>
             </label>
-            <label for="create">
-                <button type="submit">Create account</button>
+           <label for="create">
+                <button type="submit" id="createBtn">Create Account</button>
             </label>
+            <span class="description terms">By selecting Create account, you agree to our Terms and have read and acknowledge our Global Privacy Statement.</span>
 
-        </fieldset>
+        </fieldset> 
+        
     </form>
 </body>
 </html>
